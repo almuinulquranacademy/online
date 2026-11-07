@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>আল মুঈনুল কুরআন অনলাইন একাডেমি | Al Muinul Quran Online Academy</title>
+    <meta
+      name="description"
+      content="সকল বয়সের মানুষের জন্য সহিহ কুরআন শিক্ষার অনন্য একাডেমি। গুগল মিটে ওয়ান-টু-ওয়ান লাইভ ক্লাস ও মহিলাদের জন্য শতভাগ পর্দা ও গোপনীয়তা। | A unique online academy for authentic Quran learning with Tajweed for all ages via one-to-one live classes on Google Meet."
+    />
+    <meta property="og:title" content="আল মুঈনুল কুরআন অনলাইন একাডেমি | Al Muinul Quran Online Academy" />
+    <meta
+      property="og:description"
+      content="সকল বয়সের মানুষের জন্য সহিহ কুরআন শিক্ষার অনন্য একাডেমি। ওয়ান-টু-ওয়ান লাইভ ক্লাস, অভিজ্ঞ শিক্ষক এবং শতভাগ পর্দা ও গোপনীয়তায় মহিলাদের বিশেষ ব্যাচ। | Authentic one-to-one live Quran classes on Google Meet for children, adults, and women."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link id="site-favicon" rel="icon" type="image/png" href="./logo.png" />
+    <link id="site-shortcut-icon" rel="shortcut icon" type="image/png" href="./logo.png" />
+    <link id="site-apple-icon" rel="apple-touch-icon" href="./logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Ensure official academy logo appears in the browser tab whether served from Vite dist/ or raw GitHub branch root
+      (function () {
+        var img = new Image();
+        img.onerror = function () {
+          var fav = document.getElementById('site-favicon');
+          var shortIcon = document.getElementById('site-shortcut-icon');
+          var apple = document.getElementById('site-apple-icon');
+          if (fav) fav.href = './public/logo.png';
+          if (shortIcon) shortIcon.href = './public/logo.png';
+          if (apple) apple.href = './public/logo.png';
+        };
+        img.src = './logo.png';
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FBF6E9] text-[#1F1F1F] antialiased selection:bg-[#C9A23F]/20 selection:text-[#1F1F1F]">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+    <script>
+      // Automatic fallback loader when served directly on GitHub Pages without Vite dev server
+      (function () {
+        function loadStandaloneBundle() {
+          var root = document.getElementById('root');
+          if (!root || root.children.length > 0 || window.__STANDALONE_LOADED__) return;
+          window.__STANDALONE_LOADED__ = true;
+
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './public/standalone/app.css';
+          document.head.appendChild(link);
+
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.src = './public/standalone/app.js';
+          document.body.appendChild(script);
+        }
+
+        if (window.location.hostname.indexOf('github.io') !== -1) {
+          window.addEventListener('DOMContentLoaded', loadStandaloneBundle);
+        } else {
+          window.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadStandaloneBundle, 350);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#111111" stroke="#C9A23F" stroke-width="3"/>
+  <circle cx="32" cy="32" r="25" stroke="#C9A23F" stroke-width="1" stroke-dasharray="3 2" opacity="0.7"/>
+  <!-- Open Quran Book Icon -->
+  <path d="M16 38C16 38 22 35 32 39C42 35 48 38 48 38V24C48 24 42 21 32 25C22 21 16 24 16 24V38Z" fill="#FBF6E9" stroke="#C9A23F" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M32 25V39" stroke="#C9A23F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 43L32 39L44 43" stroke="#C9A23F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="19" text-anchor="middle" fill="#C9A23F" font-family="Poppins, sans-serif" font-size="9" font-weight="700">AM</text>
+</svg>

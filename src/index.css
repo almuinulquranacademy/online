@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FBF6E9;
+    --bg-band: #F3EBD3;
+    --gold-accent: #C9A23F;
+    --maroon-cta: #9E1B3E;
+    --dark-footer: #111111;
+    --text-primary: #1F1F1F;
+    --text-secondary: #5A4A2A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #E6D3A3;
+    color: #1F1F1F;
+  }
+
+  html[lang="bn"] body {
+    font-family: 'Hind Siliguri', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html[lang="en"] body {
+    font-family: 'Poppins', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Subtle Islamic geometric arch & arabesque background accents */
+.gold-frame-shadow {
+  box-shadow: 0 12px 45px -10px rgba(90, 74, 42, 0.22), 0 0 0 1px rgba(201, 162, 63, 0.45);
+}
+
+.card-surface {
+  background-color: #FFFDF8;
+  border-radius: 16px;
+  border: 1px solid rgba(201, 162, 63, 0.35);
+  box-shadow: 0 6px 20px -4px rgba(90, 74, 42, 0.08);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-surface:hover {
+  border-color: #C9A23F;
+  box-shadow: 0 10px 26px -4px rgba(201, 162, 63, 0.22);
+}
+
+@keyframes whatsappFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes whatsappPulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  70% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+}
+
+.whatsapp-float {
+  animation: whatsappFloat 2.8s ease-in-out infinite;
+}
+
+.whatsapp-pulse-ring {
+  animation: whatsappPulseRing 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+

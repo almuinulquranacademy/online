@@ -1,0 +1,6 @@
+{
+  "name": "Al Muinul Quran Online Academy",
+  "description": "৪ বছর থেকে বৃদ্ধ পর্যন্ত সহিহ কুরআন শিক্ষার অনন্য একাডেমি | A unique academy for authentic Quran learning, from age 4 to elderly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
